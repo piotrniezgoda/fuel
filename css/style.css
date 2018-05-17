@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET CSS */
+
+html {
+    font-family: 'Francois One', sans-serif;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #292929;
+}
+
+.calc-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fuel-box {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.input-label {
+    color: #fff;
+}
+
+.fuel-input {
+    margin: 0 0 0 15px;
+    color: #fff;
+    width: 80px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #33a4ff;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.fuel-input:focus {
+    border-bottom: 2px solid #c7800d;;
+}
+
+.fuel-input--hasValue {
+    border-bottom: 2px solid #BADA55;
+}
+
+.fuel-input--noValue {
+    border-bottom: 2px solid #901a1a;
+}
+
+
+.btn {
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    padding: 8px 40px;
+    border-radius: 25px;
+    border: 2px solid #33a4ff;
+    color: #33a4ff;
+    background: none;
+    font-size: 1.1rem;
+    transition: 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    transition: 0.4s;
+   color: #BADA55;
+    border: 2px solid #BADA55;
+}
+
+.btn:focus {
+    transition: 0.4s;
+   color: #BADA55;
+    border: 2px solid #BADA55;
+}
+
+.result {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.res-box {
+    height: 30px;
+    margin: 25px 0;
+}
+
+.res--greenText {
+    color: #BADA55;
+}
+
+.res--redText {
+    color: #901a1a;
+}
